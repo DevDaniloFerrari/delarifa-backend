@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/test/register', 'UserController@store');
+Route::post('register', 'UserController@store');
+
+Route::get('testando', function () {
+    return 'Hello World';
+});
